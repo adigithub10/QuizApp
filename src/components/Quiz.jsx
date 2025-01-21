@@ -16,7 +16,7 @@ export default function Quiz() {
     shuffledAnswers.current[activeQuestionIndex].sort(() => Math.random() - 0.5);
   }
 
-  // Handle user selecting an answer
+  
   const handleSelectAnswer = useCallback(
     (selectedAns) => {
       setAnswerState("answered");
