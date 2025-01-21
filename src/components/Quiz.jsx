@@ -17,7 +17,7 @@ export default function Quiz() {
   }
 
   
-  const handleSelectAnswer = useCallback(
+  const handleSelectAswer = useCallback(
     (selectedAns) => {
       setAnswerState("answered");
 
@@ -26,6 +26,8 @@ export default function Quiz() {
         setAnswerState(isCorrect ? "correct" : "wrong");
 
         setTimeout(() => {
+          
+        }, timeout);(() => {
           setAnswerState("");
           setUserAnswers((prevUserAns) => [...prevUserAns, selectedAns]);
         }, 2000); // Delay before moving to the next question

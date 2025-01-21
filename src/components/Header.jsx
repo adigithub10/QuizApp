@@ -10,6 +10,9 @@ export default function Header() {
         <h1>
             ReactQuiz
         </h1>
+        <h2>
+          Welcome to react quiz
+        </h2>
     </header>
   )
 }
